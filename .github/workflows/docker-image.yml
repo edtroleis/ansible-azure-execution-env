@@ -14,5 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+    - name: Log in to Red Hat registry
+      with:
+        username: ${{ secrets.RH_REGISTRY_USERNAME }}
+        password: ${{ secrets.RH_REGISTRY_PASSWORD }}
+    
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
