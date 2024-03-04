@@ -6,7 +6,7 @@ ENV HTTP_proxy=""
 ENV HTTPS_proxy=""
 
 LABEL maintainer="Eduardo Troleis" \
-	description="Azure execution environment"
+	description="Ansible execution environment for Azure"
 
 RUN microdnf install -y dnf jq \
   && rpm --import https://packages.microsoft.com/keys/microsoft.asc \
