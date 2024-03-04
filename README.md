@@ -1,4 +1,4 @@
-# ansible-azure-execution-env
+# Ansible execution environment for Azure
 
 ## Build image
 ``` bash
